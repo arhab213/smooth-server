@@ -1,4 +1,15 @@
 {
-    "python.analysis.extraPaths": ["./app"],
-    "python.venvPath": "~/.cache/pypoetry/virtualenvs/"
-  }
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/__init__.py": true
+    }
+  
+}
